@@ -1,0 +1,11 @@
+Pages\SearchResultPage.class
+tests\AddToCartTest.class
+tests\HomeTest.class
+Pages\CheckoutPage.class
+tests\BaseTest.class
+Pages\BasePage.class
+Pages\ItemDetailsPage.class
+Pages\HomePage.class
+tests\LoginTest.class
+Pages\LoginPage.class
+Pages\AddToCartPage.class

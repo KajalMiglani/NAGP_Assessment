@@ -9,12 +9,63 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">109,638</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">20,102,343</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.AddToCartTest</td><td><a href="#m0">verifyUserCanAddItemToCartAndEditCart</a></td><td rowspan="1">1691505775182</td><td rowspan="1">61186</td></tr><tr class="passedodd"><td rowspan="1">tests.HomeTest</td><td><a href="#m1">verifySearchFunctionalityOnHomeScreen</a></td><td rowspan="1">1691505757763</td><td rowspan="1">11252</td></tr><tr class="passedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m2">verifyLoginForExistingUser</a></td><td rowspan="1">1691505844886</td><td rowspan="1">14167</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.WishlistTest</td><td><a href="#m0">afterMethodFunction</a></td><td rowspan="1">1691524288113</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.CompareItemTest</td><td><a href="#m1">verifyUserCanAddItemToCompareScreen</a></td><td rowspan="1">1691504194344</td><td rowspan="1">20007232</td></tr><tr class="failedodd"><td rowspan="1">tests.WishlistTest</td><td><a href="#m2">verifyUserCanAddItemToWishList</a></td><td rowspan="1">1691524269505</td><td rowspan="1">18608</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.AddToCartTest</td><td><a href="#m3">verifyUserCanAddItemToCartAndEditCart</a></td><td rowspan="1">1691524222482</td><td rowspan="1">22179</td></tr><tr class="passedodd"><td rowspan="1">tests.HomeTest</td><td><a href="#m4">verifySearchFunctionalityOnHomeScreen</a></td><td rowspan="1">1691524210939</td><td rowspan="1">4776</td></tr><tr class="passedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m5">verifyLoginForExistingUser</a></td><td rowspan="1">1691524253627</td><td rowspan="1">10167</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.AddToCartTest#verifyUserCanAddItemToCartAndEditCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.HomeTest#verifySearchFunctionalityOnHomeScreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.LoginTest#verifyLoginForExistingUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">tests.WishlistTest#afterMethodFunction</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifyUserCanAddItemToWishList status=FAILURE method=WishlistTest.verifyUserCanAddItemToWishList()[pri:0, instance:tests.WishlistTest@38467116] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: begin 0, end 50, length 18
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
+	at java.base/java.lang.String.substring(String.java:2705)
+	at utility.ScreenshotUtility.takeScreenshotOnFailure(ScreenshotUtility.java:17)
+	at tests.BaseTest.afterMethodFunction(BaseTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.CompareItemTest#verifyUserCanAddItemToCompareScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [05c753a1f58dd440192e7798b44f6860, findElement {using=xpath, value=//ul/li/span[@class=&apos;logged-in&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:51219}, msedge: {msedgedriverVersion: 115.0.1901.188 (b51b39339c4..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51219/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 05c753a1f58dd440192e7798b44f6860
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4216)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:298)
+	at java.base/java.lang.String.valueOf(String.java:4216)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at utility.WaitHelper.waitForElementVisible(WaitHelper.java:27)
+	at Pages.HomePage.verifyLoggedInUserOnHomeScreen(HomePage.java:34)
+	at tests.CompareItemTest.verifyUserCanAddItemToCompareScreen(CompareItemTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.WishlistTest#verifyUserCanAddItemToWishList</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Pages/WishlistPage
+	at Pages.ItemDetailsPage.addItemToWishlist(ItemDetailsPage.java:47)
+	at tests.WishlistTest.verifyUserCanAddItemToWishList(WishlistTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: Pages.WishlistPage
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 30 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.AddToCartTest#verifyUserCanAddItemToCartAndEditCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.HomeTest#verifySearchFunctionalityOnHomeScreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTest#verifyLoginForExistingUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -4,6 +4,9 @@
   <artifactId>NAGPSelenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+  <java.version>17</java.version>
+</properties>
   
   <dependencies>
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
@@ -39,6 +42,11 @@
     <version>5.0.0</version>
 </dependency>
 
+<dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.22</version>
+</dependency>
 
 	</dependencies>
 	
@@ -50,10 +58,20 @@
         <version>3.0.0</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng2.xml</suiteXmlFile>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
+      
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
+        
 </plugins>
 		
 	</build>

@@ -73,34 +73,35 @@ public class BaseTest {
 
 	
 	public void initializeDriver(String browser) {
-		switch (browser.toLowerCase()) {
-		case "chrome":
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		break;
-		case "firefox":
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
-		break;
-		case "edge":
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
-		break;
-		case "safari":
-		driver = new SafariDriver();
-		break;
-		case "ie":
-		WebDriverManager.iedriver().setup();
-		InternetExplorerOptions capabilities = new InternetExplorerOptions()
-		.requireWindowFocus();
-		capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
-		driver= new InternetExplorerDriver(capabilities);
-		
-		default:
+//		switch (browser) {
+//		case "chrome":
+//		WebDriverManager.chromedriver().setup();
+//		driver = new ChromeDriver();
+//		break;
+//		case "firefox":
+//		WebDriverManager.firefoxdriver().setup();
+//		driver = new FirefoxDriver();
+//		break;
+//		case "edge":
+//		WebDriverManager.edgedriver().setup();
+//		driver = new EdgeDriver();
+//		break;
+//		case "safari":
+//		driver = new SafariDriver();
+//		break;
+//		case "ie":
+//		WebDriverManager.iedriver().setup();
+//		InternetExplorerOptions capabilities = new InternetExplorerOptions()
+//		.requireWindowFocus();
+//		capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+//		driver= new InternetExplorerDriver(capabilities);
+//		
+//		default:
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		System.out.println("Incorrect value for Browser passed so started chrome driver");
-		}}
+//		}
+	}
 
 		
 	
