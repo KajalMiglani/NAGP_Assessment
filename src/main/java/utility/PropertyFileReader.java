@@ -8,7 +8,7 @@ import java.util.Properties;
 public class PropertyFileReader {
 	
 
-	 public static Properties readProperty(String fileName) throws IOException {
+	 public static Properties readProperty(String fileName) throws IOException, NullPointerException{
 	      FileInputStream fis = null;
 	      Properties prop = null;
 	      try {

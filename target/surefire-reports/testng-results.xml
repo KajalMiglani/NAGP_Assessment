@@ -2,12 +2,12 @@
 <testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-09T03:35:33 IST" name="Suite" finished-at="2023-08-09T03:36:33 IST" duration-ms="59303">
+  <suite started-at="2023-08-09T03:37:49 IST" name="Suite" finished-at="2023-08-09T03:38:53 IST" duration-ms="63819">
     <groups>
     </groups>
-    <test started-at="2023-08-09T03:35:33 IST" name="Test" finished-at="2023-08-09T03:36:33 IST" duration-ms="59303">
+    <test started-at="2023-08-09T03:37:49 IST" name="Test" finished-at="2023-08-09T03:38:53 IST" duration-ms="63819">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:36:16 IST" name="beforeMethodFunction" finished-at="2023-08-09T03:36:23 IST" duration-ms="6313" status="PASS">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:38:36 IST" name="beforeMethodFunction" finished-at="2023-08-09T03:38:42 IST" duration-ms="5995" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:36:23 IST" name="setup" finished-at="2023-08-09T03:36:23 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:38:42 IST" name="setup" finished-at="2023-08-09T03:38:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:36:23 IST" name="verifyLoginForExistingUser" finished-at="2023-08-09T03:36:32 IST" duration-ms="9401" status="PASS">
+        <test-method signature="verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:38:42 IST" name="verifyLoginForExistingUser" finished-at="2023-08-09T03:38:52 IST" duration-ms="9858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginForExistingUser -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:36:32 IST" name="afterMethodFunction" finished-at="2023-08-09T03:36:32 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34e9fd99]" started-at="2023-08-09T03:38:52 IST" name="afterMethodFunction" finished-at="2023-08-09T03:38:52 IST" duration-ms="361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
         </test-method> <!-- afterMethodFunction -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.AddToCartTest">
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.AddToCartTest@36ebc363]" started-at="2023-08-09T03:35:50 IST" name="beforeMethodFunction" finished-at="2023-08-09T03:35:56 IST" duration-ms="6060" status="PASS">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.AddToCartTest@45752059]" started-at="2023-08-09T03:38:04 IST" name="beforeMethodFunction" finished-at="2023-08-09T03:38:10 IST" duration-ms="6670" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,19 +50,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddToCartTest@36ebc363]" started-at="2023-08-09T03:35:56 IST" name="setup" finished-at="2023-08-09T03:35:56 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddToCartTest@45752059]" started-at="2023-08-09T03:38:10 IST" name="setup" finished-at="2023-08-09T03:38:10 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@36ebc363]" started-at="2023-08-09T03:35:56 IST" name="verifyUserCanAddItemToCartAndEditCart" finished-at="2023-08-09T03:36:16 IST" duration-ms="19989" status="PASS">
+        <test-method signature="verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@45752059]" started-at="2023-08-09T03:38:10 IST" name="verifyUserCanAddItemToCartAndEditCart" finished-at="2023-08-09T03:38:35 IST" duration-ms="24995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanAddItemToCartAndEditCart -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.AddToCartTest@36ebc363]" started-at="2023-08-09T03:36:16 IST" name="afterMethodFunction" finished-at="2023-08-09T03:36:16 IST" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.AddToCartTest@45752059]" started-at="2023-08-09T03:38:35 IST" name="afterMethodFunction" finished-at="2023-08-09T03:38:36 IST" duration-ms="625" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanAddItemToCartAndEditCart status=SUCCESS method=AddToCartTest.verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@36ebc363] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanAddItemToCartAndEditCart status=SUCCESS method=AddToCartTest.verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@45752059] output={null}]]]>
               </value>
             </param>
           </params>
@@ -71,11 +71,11 @@
         </test-method> <!-- afterMethodFunction -->
       </class> <!-- tests.AddToCartTest -->
       <class name="tests.HomeTest">
-        <test-method is-config="true" signature="beforeTestFunction()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:35:33 IST" name="beforeTestFunction" finished-at="2023-08-09T03:35:34 IST" duration-ms="355" status="PASS">
+        <test-method is-config="true" signature="beforeTestFunction()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:37:49 IST" name="beforeTestFunction" finished-at="2023-08-09T03:37:49 IST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestFunction -->
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:35:34 IST" name="beforeMethodFunction" finished-at="2023-08-09T03:35:43 IST" duration-ms="9008" status="PASS">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:37:49 IST" name="beforeMethodFunction" finished-at="2023-08-09T03:37:57 IST" duration-ms="8059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,15 +86,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:35:43 IST" name="setup" finished-at="2023-08-09T03:35:43 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:37:57 IST" name="setup" finished-at="2023-08-09T03:37:57 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:35:43 IST" name="verifySearchFunctionalityOnHomeScreen" finished-at="2023-08-09T03:35:50 IST" duration-ms="7086" status="PASS">
+        <test-method signature="verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:37:57 IST" name="verifySearchFunctionalityOnHomeScreen" finished-at="2023-08-09T03:38:03 IST" duration-ms="6145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionalityOnHomeScreen -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:35:50 IST" name="afterMethodFunction" finished-at="2023-08-09T03:35:50 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:38:03 IST" name="afterMethodFunction" finished-at="2023-08-09T03:38:04 IST" duration-ms="287" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodFunction -->
-        <test-method is-config="true" signature="afterTestFunction()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:36:32 IST" name="afterTestFunction" finished-at="2023-08-09T03:36:33 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="afterTestFunction()[pri:0, instance:tests.HomeTest@443118b0]" started-at="2023-08-09T03:38:52 IST" name="afterTestFunction" finished-at="2023-08-09T03:38:53 IST" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestFunction -->
