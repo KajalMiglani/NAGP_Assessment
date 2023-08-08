@@ -6,10 +6,13 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 
 public class ScreenshotUtility {
 	
+	private static final Logger logger = LoggerFactory.getLogger(ScreenshotUtility.class);
 	 public void takeScreenshotOnFailure(ITestResult result, WebDriver driver) {
 		 if(result.getStatus() == ITestResult.FAILURE)
 		 {
@@ -22,7 +25,8 @@ public class ScreenshotUtility {
 	            FileUtils.copyFile(screenshotFile,destFile);
 	            
 	        } catch (Exception e) {
-	          e.printStackTrace();
+	         
+	          logger.error("Error Occured", e);
 	        }
 		 }
 	    }
