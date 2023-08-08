@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-08T20:12:29 IST" name="Suite" finished-at="2023-08-08T20:14:19 IST" duration-ms="109638">
+    <groups>
+    </groups>
+    <test started-at="2023-08-08T20:12:29 IST" name="Test" finished-at="2023-08-08T20:14:19 IST" duration-ms="109638">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-08T20:13:56 IST" name="beforeMethodFunction" finished-at="2023-08-08T20:14:04 IST" duration-ms="8207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.verifyLoginForExistingUser() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodFunction -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-08T20:14:04 IST" name="setup" finished-at="2023-08-08T20:14:04 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-08T20:14:04 IST" name="verifyLoginForExistingUser" finished-at="2023-08-08T20:14:19 IST" duration-ms="14167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForExistingUser -->
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-08T20:14:19 IST" name="afterMethodFunction" finished-at="2023-08-08T20:14:19 IST" duration-ms="251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForExistingUser status=SUCCESS method=LoginTest.verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@f1da57d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFunction -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.AddToCartTest">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-08T20:12:49 IST" name="beforeMethodFunction" finished-at="2023-08-08T20:12:55 IST" duration-ms="5912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.AddToCartTest.verifyUserCanAddItemToCartAndEditCart() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodFunction -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-08T20:12:55 IST" name="setup" finished-at="2023-08-08T20:12:55 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-08T20:12:55 IST" name="verifyUserCanAddItemToCartAndEditCart" finished-at="2023-08-08T20:13:56 IST" duration-ms="61186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddItemToCartAndEditCart -->
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-08T20:13:56 IST" name="afterMethodFunction" finished-at="2023-08-08T20:13:56 IST" duration-ms="303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanAddItemToCartAndEditCart status=SUCCESS method=AddToCartTest.verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@480d3575] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFunction -->
+      </class> <!-- tests.AddToCartTest -->
+      <class name="tests.HomeTest">
+        <test-method is-config="true" signature="beforeTestFunction()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-08T20:12:29 IST" name="beforeTestFunction" finished-at="2023-08-08T20:12:30 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestFunction -->
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-08T20:12:30 IST" name="beforeMethodFunction" finished-at="2023-08-08T20:12:37 IST" duration-ms="7439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomeTest.verifySearchFunctionalityOnHomeScreen() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodFunction -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-08T20:12:37 IST" name="setup" finished-at="2023-08-08T20:12:37 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-08T20:12:37 IST" name="verifySearchFunctionalityOnHomeScreen" finished-at="2023-08-08T20:12:49 IST" duration-ms="11252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionalityOnHomeScreen -->
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-08T20:12:49 IST" name="afterMethodFunction" finished-at="2023-08-08T20:12:49 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchFunctionalityOnHomeScreen status=SUCCESS method=HomeTest.verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@6f53b8a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFunction -->
+        <test-method is-config="true" signature="afterTestFunction()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-08T20:14:19 IST" name="afterTestFunction" finished-at="2023-08-08T20:14:19 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestFunction -->
+      </class> <!-- tests.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

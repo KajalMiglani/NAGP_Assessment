@@ -1,0 +1,26 @@
+Projects contains following modules
+
+1. Page class
+BasePage is extended by all pages
+It contains all the webelements and action method. It also contains assertions to verify tests
+
+
+2. Test Class
+All test classes use the page method to execute method. Base Test is extended by all test classes.
+
+
+3. Helper module
+FIles in source/main/java/utility module
+3.1. constant - creates all the constant used through out
+3.2. Property file reader - helper class to read test data from property file
+3.3. Screenshot utility - for creating screenshot in case of test failure
+3.4. Wait helper - to handle waits
+
+
+4. Data 
+Data is passed through property file and excel file present in src/test/ resources
+test data is taken through property file
+Data from excel is read by Data provider method 
+
+5. Config
+Global configuration like browser name , URL are mentioned in Global config property file
