@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 public class PropertyFileReader {
 
 	
-	private static final Logger logger = LoggerFactory.getLogger(ScreenshotUtility.class);
+	private static final Logger logger = LoggerFactory.getLogger(PropertyFileReader.class);
 
 	public static Properties readProperty(String fileName) throws IOException {
 		FileInputStream fis = null;
