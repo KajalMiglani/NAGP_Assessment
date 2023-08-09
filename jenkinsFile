@@ -34,8 +34,9 @@ bat " echo 'Sonar validation'"
 }
 post
 {
-
+ 
 success{
+script {
 bat " echo 'Success block'"	
 rtMavenDeployer(
 id:'deployer',
