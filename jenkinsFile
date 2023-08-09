@@ -64,7 +64,8 @@ serverId:'nagpJfrog@artifactory',
 
 failure{
    echo 'Build or test failures detected'
-            currentBuild.result = 'FAILURE'}
+            error("Build or Test failure detected")
+}
 }
 }
 
