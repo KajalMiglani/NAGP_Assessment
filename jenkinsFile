@@ -37,6 +37,10 @@ post
  
 success{
 script {
+ def qualityGateStatus = waitForQualityGate(credentialsId: 'SonarKey-Jenkins').status
+                if (qualityGateStatus != 'OK') {
+                    error("SonarQube Quality Gate failed")
+                }
 bat " echo 'Success block'"	
 rtMavenDeployer(
 id:'deployer',
