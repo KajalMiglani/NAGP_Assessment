@@ -27,6 +27,26 @@ steps{
 bat "mvn test"
 }
 }
+
+stage ('code Publish to Artifactory'){
+steps{
+rtMavenDeployer(
+id:'deployer',
+serverId: 'nagpJfrog@artifactory',
+releaseRepo: 'RepoTest',
+snapshotRepo: 'RepoTest'
+)
+rtMavenRun(
+pom: 'pom.xml',
+goals: 'clean install',
+deployerId: 'deployer'
+)
+rtPublishBuildInfo(
+serverId:'nagpJfrog@artifactory',
+)
+
+}
+}
 }
 post
 {
