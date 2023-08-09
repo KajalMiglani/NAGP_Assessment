@@ -73,6 +73,7 @@ bat " echo Sonar failure block"
 def waitForQualityGate() {
     timeout(time: 1, unit: 'HOURS') {
         def qg = waitForQualityGate() 
+echo qg.status
         return qg.status
     }
 }
