@@ -24,17 +24,19 @@ bat "mvn test"
 }
    stage('SonarQube Analysis') {
             steps {
+script{
+WithSonarQubeEnv('')
+{
              mvn sonar:sonar
             }
         }
+}}
 }
-
 post
 {
 
 success{
    script {
-                // Check SonarQube Quality Gate status
                 def qualityGateStatus = waitForQualityGate()
                 if (qualityGateStatus != 'OK') {
                     error("SonarQube Quality Gate failed")
@@ -58,12 +60,13 @@ serverId:'nagpJfrog@artifactory',
 }
 
 }
-}
+
 
 failure{
    echo 'Build or test failures detected'
             currentBuild.result = 'FAILURE'}
-
+}
+}
 
 def waitForQualityGate() {
     timeout(time: 1, unit: 'HOURS') {
@@ -71,6 +74,6 @@ def waitForQualityGate() {
         return qg.status
     }
 }
-}
+
 
 
