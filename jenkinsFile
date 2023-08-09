@@ -11,25 +11,42 @@ cron('0 08 * * *')
 }
 stages
 {
-stage ('code preparation'){
-steps{
-bat "echo Preparing code"
-}
-}
 
 stage ('code build'){
 steps{
 bat "mvn clean"
 }
 }
-stage ('code test'){
+stage ('run test'){
 steps{
 bat "mvn test"
 }
 }
+   stage('SonarQube Analysis') {
+            steps {
+             mvn sonar:sonar
+            }
+        }
+}
 
+post
+{
+
+success{
+   script {
+                // Check SonarQube Quality Gate status
+                def qualityGateStatus = waitForQualityGate()
+                if (qualityGateStatus != 'OK') {
+                    error("SonarQube Quality Gate failed")
+                }
+				
 stage ('code Publish to Artifactory'){
-steps{
+def qualityGateStatus = waitForQualityGate()
+                if (qualityGateStatus != 'OK') {
+                    error("SonarQube Quality Gate failed")
+                }
+
+
 rtMavenDeployer(
 id:'deployer',
 serverId: 'nagpJfrog@artifactory',
@@ -46,13 +63,21 @@ serverId:'nagpJfrog@artifactory',
 )
 
 }
+
 }
 }
-post
-{
-success{
-bat"echo success"
+
+failure{
+   echo 'Build or test failures detected'
+            currentBuild.result = 'FAILURE'}
 }
+
+def waitForQualityGate() {
+    timeout(time: 1, unit: 'HOURS') {
+        def qg = waitForQualityGate() // Requires the SonarQube Scanner for Jenkins plugin
+        return qg.status
+    }
 }
-}
+
+
 
