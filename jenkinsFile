@@ -78,6 +78,6 @@ def waitForQualityGate() {
         return qg.status
     }
 }
-
+}
 
 
