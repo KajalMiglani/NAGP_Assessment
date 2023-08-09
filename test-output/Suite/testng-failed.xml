@@ -3,26 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.WishlistTest">
+      <class name="tests.HomeTest">
         <methods>
-          <include name="beforeMethodFunction"/>
-          <include name="setup"/>
-          <include name="afterMethodFunction"/>
-          <include name="verifyUserCanAddItemToWishList"/>
-          <include name="afterTestFunction"/>
-          <include name="beforeTestFunction"/>
-        </methods>
-      </class> <!-- tests.WishlistTest -->
-      <class name="tests.CompareItemTest">
-        <methods>
-          <include name="verifyUserCanAddItemToCompareScreen"/>
+          <include name="verifySearchFunctionalityOnHomeScreen"/>
           <include name="beforeMethodFunction"/>
           <include name="afterMethodFunction"/>
-          <include name="setup"/>
-          <include name="afterTestFunction"/>
           <include name="beforeTestFunction"/>
+          <include name="afterTestFunction"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tests.CompareItemTest -->
+      </class> <!-- tests.HomeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

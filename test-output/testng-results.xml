@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="13" passed="3" failed="2" skipped="0">
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T19:46:26 IST" name="Suite" finished-at="2023-08-09T01:21:28 IST" duration-ms="20102343">
+  <suite started-at="2023-08-09T06:34:35 IST" name="Suite" finished-at="2023-08-09T06:35:28 IST" duration-ms="52487">
     <groups>
     </groups>
-    <test started-at="2023-08-08T19:46:26 IST" name="Test" finished-at="2023-08-09T01:21:28 IST" duration-ms="20102343">
+    <test started-at="2023-08-09T06:34:35 IST" name="Test" finished-at="2023-08-09T06:35:28 IST" duration-ms="52487">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@431cd9b2]" started-at="2023-08-09T01:20:44 IST" name="beforeMethodFunction" finished-at="2023-08-09T01:20:53 IST" duration-ms="8712" status="PASS">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-09T06:35:13 IST" name="beforeMethodFunction" finished-at="2023-08-09T06:35:18 IST" duration-ms="4747" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@431cd9b2]" started-at="2023-08-09T01:20:53 IST" name="setup" finished-at="2023-08-09T01:20:53 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-09T06:35:18 IST" name="setup" finished-at="2023-08-09T06:35:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@431cd9b2]" started-at="2023-08-09T01:20:53 IST" name="verifyLoginForExistingUser" finished-at="2023-08-09T01:21:03 IST" duration-ms="10167" status="PASS">
+        <test-method signature="verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-09T06:35:18 IST" name="verifyLoginForExistingUser" finished-at="2023-08-09T06:35:27 IST" duration-ms="9176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginForExistingUser -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@431cd9b2]" started-at="2023-08-09T01:21:03 IST" name="afterMethodFunction" finished-at="2023-08-09T01:21:03 IST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@f1da57d]" started-at="2023-08-09T06:35:27 IST" name="afterMethodFunction" finished-at="2023-08-09T06:35:27 IST" duration-ms="246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginForExistingUser status=SUCCESS method=LoginTest.verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@431cd9b2] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginForExistingUser status=SUCCESS method=LoginTest.verifyLoginForExistingUser()[pri:0, instance:tests.LoginTest@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -39,7 +39,7 @@
         </test-method> <!-- afterMethodFunction -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.AddToCartTest">
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.AddToCartTest@72c8e7b]" started-at="2023-08-09T01:20:15 IST" name="beforeMethodFunction" finished-at="2023-08-09T01:20:22 IST" duration-ms="6506" status="PASS">
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-09T06:34:47 IST" name="beforeMethodFunction" finished-at="2023-08-09T06:34:53 IST" duration-ms="5444" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,19 +50,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddToCartTest@72c8e7b]" started-at="2023-08-09T01:20:22 IST" name="setup" finished-at="2023-08-09T01:20:22 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-09T06:34:53 IST" name="setup" finished-at="2023-08-09T06:34:53 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@72c8e7b]" started-at="2023-08-09T01:20:22 IST" name="verifyUserCanAddItemToCartAndEditCart" finished-at="2023-08-09T01:20:44 IST" duration-ms="22179" status="PASS">
+        <test-method signature="verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-09T06:34:53 IST" name="verifyUserCanAddItemToCartAndEditCart" finished-at="2023-08-09T06:35:13 IST" duration-ms="19866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanAddItemToCartAndEditCart -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.AddToCartTest@72c8e7b]" started-at="2023-08-09T01:20:44 IST" name="afterMethodFunction" finished-at="2023-08-09T01:20:44 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.AddToCartTest@480d3575]" started-at="2023-08-09T06:35:13 IST" name="afterMethodFunction" finished-at="2023-08-09T06:35:13 IST" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanAddItemToCartAndEditCart status=SUCCESS method=AddToCartTest.verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanAddItemToCartAndEditCart status=SUCCESS method=AddToCartTest.verifyUserCanAddItemToCartAndEditCart()[pri:0, instance:tests.AddToCartTest@480d3575] output={null}]]]>
               </value>
             </param>
           </params>
@@ -71,7 +71,11 @@
         </test-method> <!-- afterMethodFunction -->
       </class> <!-- tests.AddToCartTest -->
       <class name="tests.HomeTest">
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@26abb146]" started-at="2023-08-09T01:20:02 IST" name="beforeMethodFunction" finished-at="2023-08-09T01:20:10 IST" duration-ms="8797" status="PASS">
+        <test-method is-config="true" signature="beforeTestFunction()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-09T06:34:35 IST" name="beforeTestFunction" finished-at="2023-08-09T06:34:35 IST" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestFunction -->
+        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-09T06:34:35 IST" name="beforeMethodFunction" finished-at="2023-08-09T06:34:41 IST" duration-ms="5945" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,268 +86,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@26abb146]" started-at="2023-08-09T01:20:10 IST" name="setup" finished-at="2023-08-09T01:20:10 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-09T06:34:41 IST" name="setup" finished-at="2023-08-09T06:34:42 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@26abb146]" started-at="2023-08-09T01:20:10 IST" name="verifySearchFunctionalityOnHomeScreen" finished-at="2023-08-09T01:20:15 IST" duration-ms="4776" status="PASS">
+        <test-method signature="verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-09T06:34:42 IST" name="verifySearchFunctionalityOnHomeScreen" finished-at="2023-08-09T06:34:47 IST" duration-ms="5731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionalityOnHomeScreen -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@26abb146]" started-at="2023-08-09T01:20:15 IST" name="afterMethodFunction" finished-at="2023-08-09T01:20:15 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-09T06:34:47 IST" name="afterMethodFunction" finished-at="2023-08-09T06:34:47 IST" duration-ms="240" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchFunctionalityOnHomeScreen status=SUCCESS method=HomeTest.verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@26abb146] output={null}]]]>
+                <![CDATA[[TestResult name=verifySearchFunctionalityOnHomeScreen status=SUCCESS method=HomeTest.verifySearchFunctionalityOnHomeScreen()[pri:0, instance:tests.HomeTest@6f53b8a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodFunction -->
-      </class> <!-- tests.HomeTest -->
-      <class name="tests.CompareItemTest">
-        <test-method is-config="true" signature="beforeTestFunction()[pri:0, instance:tests.CompareItemTest@4007f65e]" started-at="2023-08-08T19:46:26 IST" name="beforeTestFunction" finished-at="2023-08-08T19:46:26 IST" duration-ms="404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestFunction -->
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.CompareItemTest@4007f65e]" started-at="2023-08-08T19:46:26 IST" name="beforeMethodFunction" finished-at="2023-08-08T19:46:34 IST" duration-ms="7645" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.CompareItemTest.verifyUserCanAddItemToCompareScreen() throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodFunction -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CompareItemTest@4007f65e]" started-at="2023-08-08T19:46:34 IST" name="setup" finished-at="2023-08-08T19:46:34 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyUserCanAddItemToCompareScreen()[pri:0, instance:tests.CompareItemTest@4007f65e]" started-at="2023-08-08T19:46:34 IST" name="verifyUserCanAddItemToCompareScreen" finished-at="2023-08-09T01:20:01 IST" duration-ms="20007232" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=115.0.1901.200)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [05c753a1f58dd440192e7798b44f6860, findElement {using=xpath, value=//ul/li/span[@class='logged-in']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:51219}, msedge: {msedgedriverVersion: 115.0.1901.188 (b51b39339c4..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51219/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 05c753a1f58dd440192e7798b44f6860]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=115.0.1901.200)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [05c753a1f58dd440192e7798b44f6860, findElement {using=xpath, value=//ul/li/span[@class='logged-in']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:51219}, msedge: {msedgedriverVersion: 115.0.1901.188 (b51b39339c4..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51219/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 05c753a1f58dd440192e7798b44f6860
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy19.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:298)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at utility.WaitHelper.waitForElementVisible(WaitHelper.java:27)
-at Pages.HomePage.verifyLoggedInUserOnHomeScreen(HomePage.java:34)
-at tests.CompareItemTest.verifyUserCanAddItemToCompareScreen(CompareItemTest.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanAddItemToCompareScreen -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.CompareItemTest@4007f65e]" started-at="2023-08-09T01:20:01 IST" name="afterMethodFunction" finished-at="2023-08-09T01:20:02 IST" duration-ms="503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserCanAddItemToCompareScreen status=FAILURE method=CompareItemTest.verifyUserCanAddItemToCompareScreen()[pri:0, instance:tests.CompareItemTest@4007f65e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodFunction -->
-        <test-method is-config="true" signature="afterTestFunction()[pri:0, instance:tests.CompareItemTest@4007f65e]" started-at="2023-08-09T01:21:28 IST" name="afterTestFunction" finished-at="2023-08-09T01:21:28 IST" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="afterTestFunction()[pri:0, instance:tests.HomeTest@6f53b8a]" started-at="2023-08-09T06:35:27 IST" name="afterTestFunction" finished-at="2023-08-09T06:35:28 IST" duration-ms="274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestFunction -->
-      </class> <!-- tests.CompareItemTest -->
-      <class name="tests.WishlistTest">
-        <test-method is-config="true" signature="beforeMethodFunction(java.lang.reflect.Method)[pri:0, instance:tests.WishlistTest@38467116]" started-at="2023-08-09T01:21:03 IST" name="beforeMethodFunction" finished-at="2023-08-09T01:21:09 IST" duration-ms="5522" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.WishlistTest.verifyUserCanAddItemToWishList() throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodFunction -->
-        <test-method signature="verifyUserCanAddItemToWishList()[pri:0, instance:tests.WishlistTest@38467116]" started-at="2023-08-09T01:21:09 IST" name="verifyUserCanAddItemToWishList" finished-at="2023-08-09T01:21:28 IST" duration-ms="18608" status="FAIL">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Pages/WishlistPage]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Pages/WishlistPage
-at Pages.ItemDetailsPage.addItemToWishlist(ItemDetailsPage.java:47)
-at tests.WishlistTest.verifyUserCanAddItemToWishList(WishlistTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: Pages.WishlistPage
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanAddItemToWishList -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WishlistTest@38467116]" started-at="2023-08-09T01:21:09 IST" name="setup" finished-at="2023-08-09T01:21:09 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="afterMethodFunction(org.testng.ITestResult)[pri:0, instance:tests.WishlistTest@38467116]" started-at="2023-08-09T01:21:28 IST" name="afterMethodFunction" finished-at="2023-08-09T01:21:28 IST" duration-ms="0" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserCanAddItemToWishList status=FAILURE method=WishlistTest.verifyUserCanAddItemToWishList()[pri:0, instance:tests.WishlistTest@38467116] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.StringIndexOutOfBoundsException">
-            <message>
-              <![CDATA[begin 0, end 50, length 18]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.StringIndexOutOfBoundsException: begin 0, end 50, length 18
-at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4602)
-at java.base/java.lang.String.substring(String.java:2705)
-at utility.ScreenshotUtility.takeScreenshotOnFailure(ScreenshotUtility.java:17)
-at tests.BaseTest.afterMethodFunction(BaseTest.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodFunction -->
-      </class> <!-- tests.WishlistTest -->
+      </class> <!-- tests.HomeTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
