@@ -57,7 +57,7 @@ public class Constant {
 	public static final String URL = "URL";
 	public static final String ALERT_DISPLAYED = "Alert Displayed : ";
 	public static final String PATH_ADDRESS_XLSX = "src/test/resources/Address.xlsx";
-	
+	public static final String ERROR_OCCURED = "Error Occured";
 
 
 }
