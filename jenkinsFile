@@ -27,6 +27,7 @@ bat "mvn test"
 script{
 WithSonarQubeEnv('Test_Sonar')
 {
+bat " echo 'Sonar validation'"
           bat "mvn sonar:sonar"
             }
         }
@@ -41,7 +42,7 @@ success{
                 if (qualityGateStatus != 'OK') {
                     error("SonarQube Quality Gate failed")
                 }
-			
+bat " echo 'Success block'"	
 rtMavenDeployer(
 id:'deployer',
 serverId: 'nagpJfrog@artifactory',
@@ -63,6 +64,7 @@ serverId:'nagpJfrog@artifactory',
 
 
 failure{
+bat " echo Sonar failure block"
    echo 'Build or test failures detected'
             error("Build or Test failure detected")
 }
@@ -71,7 +73,7 @@ failure{
 
 def waitForQualityGate() {
     timeout(time: 1, unit: 'HOURS') {
-        def qg = waitForQualityGate() // Requires the SonarQube Scanner for Jenkins plugin
+        def qg = waitForQualityGate() 
         return qg.status
     }
 }
