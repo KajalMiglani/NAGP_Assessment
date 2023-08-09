@@ -37,7 +37,7 @@ post
 
 success{
    script {
-                def qualityGateStatus = waitForQualityGate().status
+                def qualityGateStatus = waitForQualityGate(credentialsId: 'SonarKey-Jenkins').status
                 if (qualityGateStatus != 'OK') {
                     error("SonarQube Quality Gate failed")
                 }
