@@ -4,7 +4,7 @@ environment{
 notifyEmail= "kajal.miglani@nagarro.com"
 }
 tools{
-maven 'MAVEN_HOME'
+maven '3.9.4'
 }
 triggers {
 cron('0 08 * * *')
