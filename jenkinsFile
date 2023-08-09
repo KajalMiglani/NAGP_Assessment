@@ -42,6 +42,7 @@ script {
     if (qg.status != 'OK') {
       error "Pipeline aborted due to quality gate failure: ${qg.status}"
     }
+}
                 
 bat " echo 'Success block'"	
 rtMavenDeployer(
