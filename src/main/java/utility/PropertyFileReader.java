@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 public class PropertyFileReader {
 	
 	private static final Logger logger = LoggerFactory.getLogger(ScreenshotUtility.class);
-	 public static Properties readProperty(String fileName) throws IOException, NullPointerException{
+	 public static Properties readProperty(String fileName) throws IOException{
 	      FileInputStream fis = null;
 	      Properties prop = null;
 	      try {
@@ -23,7 +23,15 @@ public class PropertyFileReader {
 	      } catch(IOException e) {
 	    	  logger.error("Error Occured", e);
 	      } finally {
+	    	  if(fis!=null) {
+	    	  try {
 	         fis.close();
+	    	  }
+	    	  catch(FileNotFoundException ex)
+	    	  {
+	    		 
+	    	  }
+	    	  }
 	      }
 	      return prop;
 	   }
