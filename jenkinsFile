@@ -37,7 +37,7 @@ post
 
 success{
    script {
-                def qualityGateStatus = waitForQualityGate()
+                def qualityGateStatus = waitForQualityGate().status
                 if (qualityGateStatus != 'OK') {
                     error("SonarQube Quality Gate failed")
                 }
@@ -70,13 +70,7 @@ bat " echo Sonar failure block"
 }
 }
 
-def waitForQualityGate() {
-    timeout(time: 1, unit: 'HOURS') {
-        def qg = waitForQualityGate() 
-echo qg.status
-        return qg.status
-    }
-}
+
 
 
 
