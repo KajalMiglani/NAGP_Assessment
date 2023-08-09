@@ -11,18 +11,18 @@ cron('0 08 * * *')
 }
 stages
 {
-stage ('code preparation"){
+stage ('code preparation'){
 steps{
 bat "echo Preparing code"
 }
 }
 
-stage ('code build"){
+stage ('code build'){
 steps{
 bat "mvn clean"
 }
 }
-stage ('code preparation"){
+stage ('code preparation'){
 steps{
 bat "mvn test"
 }
