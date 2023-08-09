@@ -32,7 +32,6 @@ public class HomePage extends BasePage{
 		// TODO Auto-generated method stub
 		verifyPageHeadingText(Constant.HOME);
 		wait.waitForElementVisible(loggedInUser);
-		Thread.sleep(5000);
 		String loggedInUsername = loggedInUser.getText();
 		Assert.assertTrue(loggedInUsername.contains(loggedUsername) ,Constant.LOGGED_IN_USER_NAME+loggedUsername);
 		logger.log(Status.PASS,Constant.VERIFIED_LOGGED_IN_USER+ loggedInUsername);
