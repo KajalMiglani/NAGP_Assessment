@@ -5,9 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class PropertyFileReader {
 	
-
+	private static final Logger logger = LoggerFactory.getLogger(ScreenshotUtility.class);
 	 public static Properties readProperty(String fileName) throws IOException, NullPointerException{
 	      FileInputStream fis = null;
 	      Properties prop = null;
@@ -16,9 +19,9 @@ public class PropertyFileReader {
 	         prop = new Properties();
 	         prop.load(fis);
 	      } catch(FileNotFoundException ex) {
-	         ex.printStackTrace();
+	    	  logger.error("Error Occured", ex);
 	      } catch(IOException e) {
-	         e.printStackTrace();
+	    	  logger.error("Error Occured", e);
 	      } finally {
 	         fis.close();
 	      }
