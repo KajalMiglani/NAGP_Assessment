@@ -27,7 +27,7 @@ bat "mvn test"
 script{
 WithSonarQubeEnv('Test_Sonar')
 {
-             mvn sonar:sonar
+          bat "mvn sonar:sonar"
             }
         }
 }}
