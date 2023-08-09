@@ -29,7 +29,7 @@ public class PropertyFileReader {
 	    	  }
 	    	  catch(FileNotFoundException ex)
 	    	  {
-	    		 
+	    	 logger.error("Error Occured", e);
 	    	  }
 	    	  }
 	      }
