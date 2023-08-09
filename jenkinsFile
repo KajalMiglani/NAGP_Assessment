@@ -22,7 +22,7 @@ steps{
 bat "mvn clean"
 }
 }
-stage ('code preparation'){
+stage ('code test'){
 steps{
 bat "mvn test"
 }
