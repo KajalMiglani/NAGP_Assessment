@@ -5,7 +5,6 @@ notifyEmail= "kajal.miglani@nagarro.com"
 }
 tools{
 maven '3.9.4'
-jdk 'JDK11'
 }
 triggers {
 cron('0 08 * * *')
