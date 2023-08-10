@@ -46,12 +46,13 @@ public class BaseTest {
 		Properties prop = null;
 		try {
 			prop = PropertyFileReader.readProperty(System.getProperty(Constant.USER_DIR)+File.separator+Constant.GLOBAL_CONFIG_PROPERTIES_PATH);
+			String browser = prop.getProperty("BROWSER");
+			initializeDriver(browser);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String browser = prop.getProperty("BROWSER");
-		initializeDriver(browser);
+		
 		driver.manage().window().maximize();
 		String url = prop.getProperty("URL");
 		driver.get(url);
