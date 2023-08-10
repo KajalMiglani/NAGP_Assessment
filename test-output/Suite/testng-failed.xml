@@ -13,6 +13,26 @@
           <include name="setup"/>
         </methods>
       </class> <!-- tests.HomeTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="beforeMethodFunction"/>
+          <include name="afterMethodFunction"/>
+          <include name="setup"/>
+          <include name="verifyLoginForExistingUser"/>
+          <include name="beforeTestFunction"/>
+          <include name="afterTestFunction"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.AddToCartTest">
+        <methods>
+          <include name="beforeMethodFunction"/>
+          <include name="afterMethodFunction"/>
+          <include name="setup"/>
+          <include name="verifyUserCanAddItemToCartAndEditCart"/>
+          <include name="afterTestFunction"/>
+          <include name="beforeTestFunction"/>
+        </methods>
+      </class> <!-- tests.AddToCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
