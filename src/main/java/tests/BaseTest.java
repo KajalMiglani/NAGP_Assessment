@@ -7,11 +7,6 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
-import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -46,8 +41,7 @@ public class BaseTest {
 		Properties prop = null;
 		try {
 			prop = PropertyFileReader.readProperty(System.getProperty(Constant.USER_DIR)+File.separator+Constant.GLOBAL_CONFIG_PROPERTIES_PATH);
-			String browser = prop.getProperty("BROWSER");
-			initializeDriver(browser);
+			initializeDriver();
 			driver.manage().window().maximize();
 			String url = prop.getProperty("URL");
 			driver.get(url);
