@@ -14,7 +14,7 @@ import utility.Constant;
 public class AddToCartPage extends BasePage {
 
 	
-	WebDriver driver;
+	
 
 
 	@FindBy(xpath = "//strong[@class ='product-item-name']/a")

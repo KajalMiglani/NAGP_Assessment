@@ -15,7 +15,7 @@ import utility.Constant;
 
 public class CheckoutPage extends BasePage {
 
-	WebDriver driver;
+	
 
 	@FindBy(xpath = "//button[@class='action primary checkout']/span")
 	WebElement placeOrderBtn;

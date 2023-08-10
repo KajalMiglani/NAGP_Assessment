@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ItemDetailsPage extends BasePage {
 
 	
-	WebDriver driver;
+	
 
 	@FindBy(xpath = "//a[@class='action towishlist']")
 	WebElement AddToWishListlink;

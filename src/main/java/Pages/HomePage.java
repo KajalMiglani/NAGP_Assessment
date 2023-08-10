@@ -11,7 +11,7 @@ import utility.Constant;
 public class HomePage extends BasePage{
 	
 
-	WebDriver driver;
+	
 	
 	@FindBy(id ="search")
 	WebElement searchField;

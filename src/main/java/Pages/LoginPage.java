@@ -24,7 +24,7 @@ import utility.PropertyFileReader;
 public class LoginPage extends BasePage {
 
 
-	WebDriver driver;
+	
 	
 	@FindBy(xpath = "(//a[contains(text() ,'Sign In')])[1]")
 	WebElement SignInLink;

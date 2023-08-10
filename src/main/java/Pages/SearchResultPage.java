@@ -17,7 +17,7 @@ public class SearchResultPage extends BasePage {
 
 
 
-	WebDriver driver;
+	
 	
 
 	@FindBy(xpath = "//div[@class='message notice']/div")
