@@ -29,7 +29,6 @@ public class HomePage extends BasePage{
 	}
 	
 	public void verifyLoggedInUserOnHomeScreen(String loggedUsername) throws InterruptedException {
-		// TODO Auto-generated method stub
 		verifyPageHeadingText(Constant.HOME);
 		wait.waitForElementVisible(loggedInUser);
 		String loggedInUsername = loggedInUser.getText();
@@ -40,7 +39,6 @@ public class HomePage extends BasePage{
 
 
 	public void searchItem(String item) {
-		// TODO Auto-generated method stub
 		
 		searchField.click();
 		searchField.clear();

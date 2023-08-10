@@ -44,7 +44,6 @@ public class AddToCartPage extends BasePage {
 
 
 	public boolean verifyItemDisplayedInCart(String itemName) {
-		// TODO Auto-generated method stub
 		int num = 0;
 		for (WebElement webElement : cartItemList) {
 			if (webElement.getText().equals(itemName)) {
@@ -63,7 +62,6 @@ public class AddToCartPage extends BasePage {
 
 	public void verifyItemAddedIncart(String itemName) throws InterruptedException {
 		
-		// TODO Auto-generated method stub
 		String itemFName = itemFullName.getText();
 		verifyAlertDisplayed(Constant.YOU_ADDED+itemFName+Constant.TO_YOUR);
 		navigateTocart();
@@ -76,14 +74,12 @@ public class AddToCartPage extends BasePage {
 
 
 	private void navigateTocart() {
-		// TODO Auto-generated method stub
 		addCartLink.click();
 		viewEditCart.click();
 	}
 
 
 	public void editItemQtyInCart(String itemAvailableInStore, String qtyNum) {
-		// TODO Auto-generated method stub
 		WebElement qty = driver.findElement(By.xpath("//a[contains(@title,'"+itemAvailableInStore+"')]/../following-sibling::td[2]/div//label/input"));
 		qty.clear();
 		qty.sendKeys(qtyNum);
@@ -92,7 +88,6 @@ public class AddToCartPage extends BasePage {
 
 
 	public void verifyEditedQty(String itemAvailableInStore, String qtyNum) {
-		// TODO Auto-generated method stub
 		WebElement qty = driver.findElement(By.xpath("//a[contains(@title,'"+itemAvailableInStore+"')]/../following-sibling::td[2]/div//label/input"));
 		String itemQty = qty.getAttribute(Constant.VALUE);
 		Assert.assertTrue(itemQty.equals(qtyNum), Constant.ITEM_QUANTITY_EDITED);

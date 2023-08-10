@@ -87,7 +87,6 @@ public class CheckoutPage extends BasePage {
 	}
 
 	public void verifyAddress(String[] newAddress) {
-		// TODO Auto-generated method stub
 		Assert.assertTrue(shippingAddress.getText().contains(newAddress[1]),
 				Constant.COMPANY_NAME_VERIFIED + newAddress[1]);
 		logger.log(Status.PASS, Constant.COMPANY_NAME_VERIFIED + newAddress[1]);

@@ -36,7 +36,6 @@ public class ItemDetailsPage extends BasePage {
 
 
 	public void addItemToCart(String item, String cartQty) throws InterruptedException {
-		// TODO Auto-generated method stub
 		SearchResultPage search = new SearchResultPage(driver);
 		search.verifySearch(item);
 		search.searchResultList_ItemName.get(0).click();
@@ -49,7 +48,6 @@ public class ItemDetailsPage extends BasePage {
 
 
 	public String getItemName() {
-		// TODO Auto-generated method stub
 		return itemFullName.getText();
 	}
 

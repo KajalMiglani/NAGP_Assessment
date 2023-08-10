@@ -37,7 +37,6 @@ public class SearchResultPage extends BasePage {
 	}
 
 	public void verifySearch(String itemName) {
-		// TODO Auto-generated method stub
 		verifyPageHeadingText(Constant.SEARCH_RESULTS_FOR);
 
 		try {
@@ -46,7 +45,6 @@ public class SearchResultPage extends BasePage {
 			logger.log(Status.PASS, Constant.SEARCH_RESULTS_DISPLAYED_ON_SCREEN_FOR_ITEM + itemName);
 
 		} catch (NoSuchElementException e) {
-			// TODO: handle exception
 			Assert.assertTrue(errorMessage.isDisplayed());
 			if (itemName.length() < 3) {
 				Assert.assertTrue(errorMessage.getText().contains(Constant.MINIMUM_SEARCH_QUERY_LENGTH_IS_3),

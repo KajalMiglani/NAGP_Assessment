@@ -76,18 +76,15 @@ public class BasePage {
 	}
 
 	public static void createExtentTest(Method testMethod) {
-		// TODO Auto-generated method stub
 		logger = extentReports.createTest(testMethod.getName());
 
 	}
 
 	public static void flushExtentReport() {
-		// TODO Auto-generated method stub
 		extentReports.flush();
 	}
 
 	public static void publishResult(ITestResult result) {
-		// TODO Auto-generated method stub
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			String methodName = result.getMethod().getMethodName();
 			String logText = Constant.TEST_CASE + methodName + Constant.PASSED;
@@ -110,13 +107,11 @@ public class BasePage {
 					.readProperty(System.getProperty(Constant.USER_DIR) + File.separator + Constant.GLOBAL_CONFIG_PROPERTIES_PATH)
 					.getProperty(Constant.URL));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	public void verifyAlertDisplayed(String expectedAlert) throws InterruptedException {
-		// TODO Auto-generated method stub
 		wait.waitForElementVisible(Alert);
 		Assert.assertTrue(Alert.getText().contains(expectedAlert), Constant.ALERT_DISPLAYED + expectedAlert);
 		logger.log(Status.PASS, Constant.ALERT_DISPLAYED + expectedAlert);
