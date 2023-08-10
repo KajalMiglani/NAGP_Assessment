@@ -30,7 +30,7 @@ public class AddToCartPage extends BasePage {
 	WebElement itemFullName;
 	
 	@FindBy(xpath = "//button[@class='action primary checkout' and @data-role='proceed-to-checkout']")
-	WebElement ProceedcheckOutBtn;
+	WebElement proceedcheckOutBtn;
 	
 
 	
@@ -51,10 +51,8 @@ public class AddToCartPage extends BasePage {
 				break;
 			}
 		}
-		if (num > 0)
-			return true;
-		else
-			return false;
+		return num>0;
+		
 
 	}
 

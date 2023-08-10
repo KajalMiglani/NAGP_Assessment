@@ -11,19 +11,19 @@ public class ItemDetailsPage extends BasePage {
 	
 
 	@FindBy(xpath = "//a[@class='action towishlist']")
-	WebElement AddToWishListlink;
+	WebElement addToWishListlink;
 
 	@FindBy(id = "product-addtocart-button")
-	WebElement AddToCartButton;
+	WebElement addToCartButton;
 
 	@FindBy(id = "qty")
-	WebElement QuantityInputField;
+	WebElement quantityInputField;
 
 	@FindBy(xpath = "//h1/span")
 	WebElement itemFullName;
 	
 	@FindBy(xpath = "(//span[text()='Add to Compare'])[1]")
-	WebElement AddToCompareButton;
+	WebElement addToCompareButton;
 	
 	
 	
@@ -39,10 +39,10 @@ public class ItemDetailsPage extends BasePage {
 		SearchResultPage search = new SearchResultPage(driver);
 		search.verifySearch(item);
 		search.searchResultList_ItemName.get(0).click();
-		QuantityInputField.clear();
-		QuantityInputField.sendKeys(cartQty);
-		wait.waitForElementClickable(AddToCartButton);
-		AddToCartButton.click();
+		quantityInputField.clear();
+		quantityInputField.sendKeys(cartQty);
+		wait.waitForElementClickable(addToCartButton);
+		addToCartButton.click();
 
 	}
 
@@ -52,8 +52,8 @@ public class ItemDetailsPage extends BasePage {
 	}
 
 	public void clickAddCompareButton()
-	{wait.waitForElementClickable(AddToCompareButton);
-		AddToCompareButton.click();
+	{wait.waitForElementClickable(addToCompareButton);
+		addToCompareButton.click();
 	}
 	
 	
