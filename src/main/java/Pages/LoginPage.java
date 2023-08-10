@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import java.io.File;
 import utility.Constant;

@@ -5,10 +5,10 @@ import java.io.IOException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Pages.AddToCartPage;
-import Pages.HomePage;
-import Pages.ItemDetailsPage;
-import Pages.LoginPage;
+import pages.AddToCartPage;
+import pages.HomePage;
+import pages.ItemDetailsPage;
+import pages.LoginPage;
 import utility.Constant;
 import utility.PropertyFileReader;
 

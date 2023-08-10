@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -124,10 +124,9 @@ public class BasePage {
 
 	@DataProvider(name = "ReadDataFromExcel")
 	public static Object[][] ReadDataFromExcel() throws IOException {
-		FileInputStream fis = null;
-		try
+		
+		try(FileInputStream fis = new FileInputStream(Constant.PATH_ADDRESS_XLSX);)
 		{
-		 fis = new FileInputStream(Constant.PATH_ADDRESS_XLSX);
 		workbook = new XSSFWorkbook(fis);
 		worksheet = workbook.getSheet(sheetName);
 		XSSFRow Row = worksheet.getRow(0);
@@ -154,11 +153,7 @@ public class BasePage {
 		}
 		return Data;
 		}
-		finally
-		{
-			workbook.close();
-			fis.close();
-		}
+		
 	}
 	
 

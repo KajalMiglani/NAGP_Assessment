@@ -18,8 +18,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import Pages.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.BasePage;
 import utility.Constant;
 import utility.PropertyFileReader;
 import utility.ScreenshotUtility;

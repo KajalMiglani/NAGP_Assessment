@@ -5,8 +5,8 @@ import java.io.IOException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Pages.HomePage;
-import Pages.SearchResultPage;
+import pages.HomePage;
+import pages.SearchResultPage;
 import utility.Constant;
 import utility.PropertyFileReader;
 
