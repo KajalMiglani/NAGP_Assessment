@@ -51,7 +51,7 @@ public class AddToCartTest extends BaseTest{
 		String itemQTY = PropertyFileReader.readProperty(testDataPath).getProperty(Constant.CART_QTY);
 		home.searchItem(itemAvailableInStore);
 		itemDetail.addItemToCart(itemAvailableInStore,itemQTY );
-		cart.verifyItemAddedIncart(itemAvailableInStore);
+		cart.verifyItemAddedIncart();
 		String itemQty = PropertyFileReader.readProperty(testDataPath).getProperty(Constant.CART_EDIT_QTY);
 		cart.editItemQtyInCart(itemAvailableInStore, itemQty);
 		cart.verifyEditedQty(itemAvailableInStore, itemQty);

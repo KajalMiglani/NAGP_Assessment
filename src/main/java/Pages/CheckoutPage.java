@@ -32,8 +32,7 @@ public class CheckoutPage extends BasePage {
 	@FindBy(xpath = "//td[@class='col col-method' and text() ='Fixed']/preceding-sibling::td/input[@type='radio']")
 	WebElement shippingmethodFixedRateRadioBtn;
 
-	@FindBy(xpath = "//span[contains(text(),'Review & Payments')]/parent::li[@class='opc-progress-bar-item _active']")
-	WebElement LabelInProgress;
+
 
 	@FindBy(xpath = "//div[@class='shipping-address-item selected-item']")
 	WebElement shippingAddress;
@@ -62,7 +61,7 @@ public class CheckoutPage extends BasePage {
 		try {
 			orderSummary_expandItemList.click();
 		} catch (NoSuchElementException e) {
-			System.out.println(Constant.ORDER_SUMMARY_ITEM_COLLAPSED);
+			logger.log(Status.INFO, Constant.ORDER_SUMMARY_ITEM_COLLAPSED);
 		}
 		ArrayList<String> text = new ArrayList<String>();
 		for (WebElement webElement : orderSummary_itemName) {

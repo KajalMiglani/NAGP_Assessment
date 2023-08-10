@@ -60,7 +60,7 @@ public class AddToCartPage extends BasePage {
 
 
 
-	public void verifyItemAddedIncart(String itemName) throws InterruptedException {
+	public void verifyItemAddedIncart() throws InterruptedException {
 		
 		String itemFName = itemFullName.getText();
 		verifyAlertDisplayed(Constant.YOU_ADDED+itemFName+Constant.TO_YOUR);
