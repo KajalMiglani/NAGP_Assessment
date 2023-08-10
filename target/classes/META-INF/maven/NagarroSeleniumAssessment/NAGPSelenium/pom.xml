@@ -13,6 +13,7 @@
   <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
   <sonar.language>java</sonar.language>
   
+  
   <java.version>17</java.version>
 </properties>
   
@@ -85,26 +86,27 @@
             <!-- put your configurations here -->
           </configuration>
         </plugin>
-        
-        <plugin>
+ 
+
+<plugin>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>${jacoco.version}</version>
     <executions>
-      <execution>
-        <id>jacoco-initialize</id>
-        <goals>
-          <goal>prepare-agent</goal>
-        </goals>
-      </execution>
-      <execution>
-        <id>jacoco-site</id>
-        <phase>package</phase>
-        <goals>
-          <goal>report</goal>
-        </goals>
-      </execution>
-      </executions>
+        <execution>
+            <id>jacoco-initialize</id>
+            <goals>
+                <goal>prepare-agent</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>jacoco-site</id>
+            <phase>package</phase>
+            <goals>
+                <goal>report</goal>
+            </goals>
+        </execution>
+    </executions>
 </plugin>
         
 </plugins>
